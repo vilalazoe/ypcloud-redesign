@@ -1,16 +1,27 @@
-# React + Vite
+# YPCloud Website Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+YPCloud 官網重設計專案，基於 Vite + React，支援中英雙語切換。
 
-Currently, two official plugins are available:
+🔗 [Live Demo v1](https://ypcloud-redesign.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 網頁內容架構
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+依據敘事邏輯由上而下排列，引導訪客從「了解技術」到「採取行動」：
 
-## Expanding the ESLint configuration
+1. **Hero** — 品牌定位與核心主張
+2. **Trust Bar** — 公司可信度指標（成立年份、專利、獎項）
+3. **Platform** — 核心技術介紹（Ultranet / MoteBus / SPhere / Edge Intelligence）
+4. **Solutions** — 三大應用情境（工業4.0 / AI Agent / 智慧空間）
+5. **Product Grid** — 完整產品線一覽
+6. **Ecosystem** — 合作夥伴生態圈
+7. **Cloud Academy（雲耕學院）** — 人才培育與社群
+8. **CTA** — 聯絡與行動入口
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 版本紀錄
+
+**v1** — 深色科技風，強調現代感與動態互動
+**v2** — 貼近 YPCloud 原有品牌語言，風格調整中
