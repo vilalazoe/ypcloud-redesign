@@ -1,0 +1,164 @@
+/* ── Backdrop ───────────────────────────────────────── */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 16, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* ── Modal panel ────────────────────────────────────── */
+.panel {
+  width: 100%;
+  max-width: 520px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), var(--glow-primary);
+  overflow: hidden;
+}
+
+.panelHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.75rem 2rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headText h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.headText p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.closeBtn:hover {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+/* ── Form ───────────────────────────────────────────── */
+.form {
+  padding: 1.75rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.field input,
+.field textarea {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.6rem 0.875rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  resize: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.5;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-glow);
+}
+
+.field textarea {
+  height: 100px;
+}
+
+.submitBtn {
+  margin-top: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-bg);
+  background: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.75rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s, opacity 0.2s;
+}
+
+.submitBtn:hover {
+  box-shadow: var(--glow-hover);
+  opacity: 0.9;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .panelHead,
+  .form {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}

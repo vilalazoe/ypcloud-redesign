@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "platform": "Platform",
+    "solutions": "Solutions",
+    "ecosystem": "Ecosystem",
+    "about": "About",
+    "academy": "Cloud Academy",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "headline": "The Cloud Infrastructure for the AI-Native Era",
+    "subheadline": "From edge devices to enterprise AI — one platform, endless connections.",
+    "cta_primary": "Explore Platform",
+    "cta_secondary": "Watch Demo"
+  },
+  "trust": {
+    "stat1_num": "2005",  "stat1_label": "Founded",
+    "stat2_num": "20yr",  "stat2_label": "Cloud Patent",
+    "stat3_num": "#1",    "stat3_label": "Taiwan Cloud Co. (MOEA 2015)",
+    "stat4_num": "4.0",   "stat4_label": "Industry Ready"
+  },
+  "platform": {
+    "label": "Platform",
+    "headline": "Built on Ultranet. Proven at Scale.",
+    "subheadline": "A patented, distributed cloud-native infrastructure connecting devices, edges, and enterprise AI.",
+    "pillars": {
+      "ultranet": { "title": "Ultranet",           "desc": "Distributed cloud-native networking layer connecting cloud, IoT, and edge." },
+      "motebus":  { "title": "MoteBus",            "desc": "Patented peer-to-peer communication protocol — xMsg and xRPC." },
+      "sphere":   { "title": "SPhere",             "desc": "Enterprise cloud in a box. Runs on PC or Raspberry Pi." },
+      "edge":     { "title": "Edge Intelligence",  "desc": "Deploy AI processing at the network edge, not just the cloud." }
+    }
+  },
+  "solutions": {
+    "label": "Solutions",
+    "headline": "From IoT to AI — Without Starting Over",
+    "items": [
+      {
+        "id": "industry",
+        "title": "Industry 4.0 Integration",
+        "desc": "Connect factory equipment, sensors, and legacy systems into a unified cloud analytics layer — no rip-and-replace required."
+      },
+      {
+        "id": "agents",
+        "title": "AI Agent Orchestration",
+        "desc": "Deploy Flow Bot to automate complex enterprise workflows. Trigger, route, and respond — all without writing backend code."
+      },
+      {
+        "id": "spaces",
+        "title": "Smart Space Deployment",
+        "desc": "Combine Smart Screen broadcasting and IP IVR to build intelligent environments for retail, healthcare, and public spaces."
+      }
+    ]
+  },
+  "products": {
+    "label": "Products",
+    "headline": "The Full Stack, Your Way",
+    "items": [
+      { "id": "ultranet",  "name": "Ultranet Platform", "desc": "Distributed cloud-native networking layer" },
+      { "id": "sphere",    "name": "SPhere",            "desc": "Enterprise cloud software, runs anywhere" },
+      { "id": "flowbot",   "name": "Flow Bot",          "desc": "No-code AI workflow automation" },
+      { "id": "screen",    "name": "Smart Screen",      "desc": "Cross-domain screen broadcasting" },
+      { "id": "ivr",       "name": "IP IVR",            "desc": "Intelligent voice response system" },
+      { "id": "otsi",      "name": "OTSI",              "desc": "Cloud operations & maintenance service" }
+    ]
+  },
+  "ecosystem": {
+    "label": "Ecosystem",
+    "headline": "Join the Ultranet Ecosystem",
+    "subheadline": "We build with partners, not just for them.",
+    "roles": [
+      { "title": "Technology Partners", "desc": "Co-develop integrations on the Ultranet Platform." },
+      { "title": "System Integrators",  "desc": "Deploy YPCloud solutions for enterprise clients." },
+      { "title": "Academic Partners",   "desc": "Research collaboration and talent pipeline." }
+    ],
+    "cta": "Become a Partner"
+  },
+  "academy": {
+    "label": "Cloud Academy",
+    "headline": "Cultivating the Next Generation of Cloud Builders",
+    "subheadline": "雲耕學院 is YPCloud's social enterprise initiative — training talent, building community, and accelerating Taiwan's cloud transition.",
+    "pillars": [
+      { "title": "Training Programs", "desc": "Hands-on cloud and AI courses for students and professionals." },
+      { "title": "Internship Pipeline", "desc": "Real projects, real impact. Direct path into the industry." },
+      { "title": "Community Events",  "desc": "Meetups, hackathons, and open knowledge sharing." }
+    ],
+    "cta_careers": "Explore Careers",
+    "cta_community": "Join the Community"
+  },
+  "cta": {
+    "headline": "Ready to build on Ultranet?",
+    "subheadline": "Talk to our team. We'll find the right fit for your stack.",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "tagline": "Distributed Ultranet — Connecting the AI-Native World",
+    "products": "Products",
+    "company": "Company",
+    "links_company": ["About", "Careers", "News", "Contact"],
+    "address": "6D-07, No.5, Sec.5, Xinyi Rd., Taipei City 110202, Taiwan",
+    "email": "info@ypcloud.com",
+    "phone": "+886 2 7728 3060",
+    "copyright": "© 2025 YPCloud Inc. All rights reserved."
+  }
+}

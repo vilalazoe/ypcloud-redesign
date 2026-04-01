@@ -1,0 +1,139 @@
+.section {
+  padding: 8rem 2rem;
+  background: var(--color-bg);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+/* ── Card grid ─────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.card {
+  position: relative;
+  padding: 1.75rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  cursor: default;
+  overflow: hidden;
+  transition:
+    border-color 0.25s,
+    transform    0.25s var(--ease-out-expo),
+    box-shadow   0.25s var(--ease-out-expo);
+}
+
+.card:hover {
+  border-color: rgba(0, 194, 255, 0.35);
+  transform: translateY(-4px);
+  box-shadow: var(--glow-hover), var(--shadow-card);
+}
+
+/* Top-right corner accent */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(ellipse at top right, var(--color-primary-glow) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--color-primary-glow);
+  border: 1px solid rgba(0, 194, 255, 0.18);
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cardName {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.cardDesc {
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  position: relative;
+  z-index: 1;
+}
+
+.cardArrow {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  color: var(--color-primary);
+  opacity: 0;
+  transform: translate(-4px, 4px);
+  transition: opacity 0.2s, transform 0.2s var(--ease-out-expo);
+  font-size: 1rem;
+}
+
+.card:hover .cardArrow {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
