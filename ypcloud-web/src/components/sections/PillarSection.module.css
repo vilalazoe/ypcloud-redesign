@@ -1,0 +1,124 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   PillarSection.module.css
+   Shared layout for Distributed Cloud / Any Edge / Jujue / Clouder sections.
+   Each section sets --pillar-color and --pillar-soft via inline style.
+───────────────────────────────────────────────────────────────────────────── */
+
+.section {
+  padding: 6rem 2rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* Swap columns for Edge / Clouder (right-text layout) */
+.inner.reverse .textCol { order: 2; }
+.inner.reverse .svgCol  { order: 1; }
+
+/* ── Text column ── */
+.textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pillar-color);
+  margin-bottom: 1.25rem;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.625rem, 3vw, 2.375rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin-bottom: 1.25rem;
+}
+
+.desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+/* ── Product list ── */
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  list-style: none;
+}
+
+.productItem {
+  display: flex;
+  align-items: baseline;
+  gap: 0.875rem;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pillar-color);
+  flex-shrink: 0;
+  margin-top: 0.35em; /* optical alignment with text */
+}
+
+.productName {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.productDesc {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-left: 0.25rem;
+}
+
+/* ── SVG column ── */
+.svgCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagram {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  overflow: visible;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .inner,
+  .inner.reverse {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .inner.reverse .textCol { order: 0; }
+  .inner.reverse .svgCol  { order: 0; }
+
+  .diagram {
+    max-width: 300px;
+  }
+}

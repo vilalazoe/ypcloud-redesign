@@ -8,10 +8,17 @@
     "contact": "聯絡我們"
   },
   "hero": {
-    "headline": "為 AI 時代而生的雲端基礎",
-    "subheadline": "從邊緣裝置到企業 AI，一個平台，無限串連。",
+    "headline": "一個平台，四種力量，無限可能。",
+    "subheadline": "從 Edge 到 Cloud，從 App 到 AI，YPCloud 讓企業數位轉型不再從零開始。",
     "cta_primary": "探索平台",
-    "cta_secondary": "觀看 Demo"
+    "cta_secondary": "了解我們"
+  },
+  "pillars": {
+    "headline": "四種力量，一個生態",
+    "cloud":   { "name": "Distributed Cloud", "tagline": "企業級分散式雲端平台" },
+    "edge":    { "name": "Any Edge",          "tagline": "邊緣運算與 IoT 智能" },
+    "jujue":   { "name": "Jujue",             "tagline": "應用生態與社群商業" },
+    "clouder": { "name": "Clouder",           "tagline": "低程式碼平台與數位人才" }
   },
   "trust": {
     "stat1_num": "2005",  "stat1_label": "成立年份",
@@ -85,6 +92,55 @@
     ],
     "cta_careers": "探索職缺",
     "cta_community": "加入社群"
+  },
+  "cloud_section": {
+    "label": "Distributed Cloud",
+    "headline": "企業級分散式雲端，從核心出發",
+    "desc": "MoteBus、Ultranet 與 AiCloud 構成 YPCloud 分散式基礎架構的核心——可擴展、擁有專利，為 AI 時代而生。",
+    "products": [
+      { "name": "MoteBus",  "desc": "點對點通訊協議" },
+      { "name": "Ultranet", "desc": "萬物雲網平台" },
+      { "name": "CoE",      "desc": "卓越營運中心" },
+      { "name": "AiCloud",  "desc": "AI 模型市集" },
+      { "name": "Qbix",     "desc": "分散式運算架構" },
+      { "name": "xStorage", "desc": "雲端儲存層" }
+    ]
+  },
+  "edge_section": {
+    "label": "Any Edge",
+    "headline": "邊緣智能，從裝置開始",
+    "desc": "將運算與 AI 部署到網路最末端——無論是工業硬體、輕量開發板，還是專用裝置——實現零雲端依賴。",
+    "products": [
+      { "name": "Mote Sphere", "desc": "邊緣運算節點" },
+      { "name": "AnyPi",       "desc": "輕量邊緣裝置" },
+      { "name": "AnyPro",      "desc": "工業級邊緣裝置" },
+      { "name": "AnyAi",       "desc": "裝置端 AI 推論" }
+    ]
+  },
+  "jujue_section": {
+    "label": "Jujue",
+    "headline": "新型應用生態，從社群到商業",
+    "desc": "Jujue 重新定義 App、服務與社群的連結方式——將數位商務、智慧螢幕與 AI Agent 融合成一個活態生態圈。",
+    "products": [
+      { "name": "Jujue",               "desc": "Web3 應用瀏覽器與生態圈" },
+      { "name": "Shoppu",              "desc": "超級市集平台" },
+      { "name": "SmartScreen",         "desc": "智慧螢幕推播服務" },
+      { "name": "jBoard",              "desc": "智慧數位看板" },
+      { "name": "AiBot / FlowBot / Actor", "desc": "數位員工 Agent" }
+    ]
+  },
+  "clouder_section": {
+    "label": "Clouder",
+    "headline": "低程式碼平台，讓每個人都能建構雲端",
+    "desc": "Clouder 讓雲端應用開發不再是工程師的專利——從無程式碼工作流程到 AI 輔助內容創作，人人皆可上雲。",
+    "products": [
+      { "name": "fBuilder",  "desc": "Flow 低程式碼建構器" },
+      { "name": "iBuilder",  "desc": "AI Builder" },
+      { "name": "jBuilder",  "desc": "Story Board 建構器" },
+      { "name": "pBuilder",  "desc": "頁面建構器" },
+      { "name": "Miki AIGC", "desc": "AI 微媒體生成" },
+      { "name": "Xapps",     "desc": "雲耕創作應用" }
+    ]
   },
   "cta": {
     "headline": "準備好在 Ultranet 上建構了嗎？",

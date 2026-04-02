@@ -1,29 +1,39 @@
-@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap');
 
 :root {
-  /* Colors */
-  --color-bg:           #0A0E17;
-  --color-surface:      #111827;
-  --color-border:       #1E2A3A;
-  --color-primary:      #00C2FF;
-  --color-primary-glow: rgba(0, 194, 255, 0.15);
-  --color-secondary:    #7B5EA7;
-  --color-text:         #E8EDF5;
-  --color-text-muted:   #6B7A99;
-  --color-success:      #00D97E;
+  /* ── Base ── */
+  --color-bg:           #FFFFFF;
+  --color-bg-soft:      #F7F8FA;
+  --color-border:       #E4E8EF;
+  --color-text:         #111827;
+  --color-text-muted:   #6B7280;
 
-  /* Typography */
-  --font-display: 'Cabinet Grotesk', sans-serif;
-  --font-body:    'DM Sans', sans-serif;
+  /* ── Brand ── */
+  --color-brand-deep:   #003087;
+  --color-brand-main:   #00AEEF;
+
+  /* ── Four Pillars ── */
+  --color-cloud:        #4A8DB5;
+  --color-edge:         #4AA58A;
+  --color-jujue:        #B57B6A;
+  --color-clouder:      #7B6AB5;
+
+  /* ── Pillar soft backgrounds ── */
+  --color-cloud-soft:   #EEF4FA;
+  --color-edge-soft:    #EEF7F3;
+  --color-jujue-soft:   #FAF2EF;
+  --color-clouder-soft: #F2EFF9;
+
+  /* ── Typography ── */
+  --font-display: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+  --font-body:    'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
   --font-zh:      'Noto Sans TC', sans-serif;
 
-  /* Shadows */
-  --shadow-card:  0 4px 24px rgba(0, 0, 0, 0.4);
-  --glow-primary: 0 0 32px rgba(0, 194, 255, 0.15);
-  --glow-hover:   0 0 48px rgba(0, 194, 255, 0.25);
+  /* ── Shadows ── */
+  --shadow-card:  0 2px 16px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
 
-  /* Easing */
+  /* ── Easing ── */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -36,20 +46,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* 中文語系時切換字體 */
 [lang="zh"] body {
   font-family: var(--font-zh);
 }
 
-/* Mobile section padding reduction */
 @media (max-width: 768px) {
   section {
-    padding-top:    5rem;
-    padding-bottom: 5rem;
+    padding-top:    4rem;
+    padding-bottom: 4rem;
   }
 }
 
-/* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;

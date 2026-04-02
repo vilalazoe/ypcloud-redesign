@@ -26,8 +26,8 @@ export default function TrustBar() {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.5, ease: EASE, delay: i * 0.08 }}
           >
-            <span className={styles.statNum}>{s.num}</span>
-            <span className={styles.statLabel}>{s.label}</span>
+            <span className={styles.num}>{s.num}</span>
+            <span className={styles.label}>{s.label}</span>
           </motion.div>
         ))}
       </div>

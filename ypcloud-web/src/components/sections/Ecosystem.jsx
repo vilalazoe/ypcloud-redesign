@@ -6,12 +6,12 @@ import styles from './Ecosystem.module.css'
 const EASE = [0.16, 1, 0.3, 1]
 
 const ROLE_ICONS = [
-  <Handshake    size={24} />,
-  <Shield       size={24} />,
-  <GraduationCap size={24} />,
+  <Handshake     size={22} />,
+  <Shield        size={22} />,
+  <GraduationCap size={22} />,
 ]
 
-const PARTNER_NAMES = ['Partner A', 'Partner B', 'Partner C', 'Partner D', 'Partner E']
+const PARTNER_LABELS = ['Partner A', 'Partner B', 'Partner C', 'Partner D', 'Partner E']
 
 const container = {
   hidden: {},
@@ -33,12 +33,12 @@ export default function Ecosystem() {
         {/* Header */}
         <motion.div
           className={styles.header}
-          initial={{ opacity: 0, y: 28 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.65, ease: EASE }}
+          transition={{ duration: 0.6, ease: EASE }}
         >
-          <span className={styles.label}>{t.ecosystem.label}</span>
+          <p className={styles.label}>{t.ecosystem.label}</p>
           <h2 className={styles.headline}>{t.ecosystem.headline}</h2>
           <p className={styles.subheadline}>{t.ecosystem.subheadline}</p>
         </motion.div>
@@ -49,9 +49,9 @@ export default function Ecosystem() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: EASE, delay: 0.15 }}
+          transition={{ duration: 0.6, ease: EASE, delay: 0.1 }}
         >
-          {PARTNER_NAMES.map(name => (
+          {PARTNER_LABELS.map(name => (
             <div key={name} className={styles.logoSlot}>
               <span className={styles.logoText}>{name}</span>
             </div>
@@ -68,7 +68,9 @@ export default function Ecosystem() {
         >
           {t.ecosystem.roles.map((role, i) => (
             <motion.div key={i} className={styles.role} variants={cardVariant}>
-              <div className={styles.roleIcon}>{ROLE_ICONS[i]}</div>
+              <div className={styles.roleIcon} aria-hidden="true">
+                {ROLE_ICONS[i]}
+              </div>
               <h3 className={styles.roleTitle}>{role.title}</h3>
               <p className={styles.roleDesc}>{role.desc}</p>
             </motion.div>

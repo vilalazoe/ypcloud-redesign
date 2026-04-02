@@ -9,15 +9,18 @@
   justify-content: space-between;
   padding: 0 2rem;
   height: 64px;
-  transition: background 0.3s var(--ease-out-expo), backdrop-filter 0.3s;
+  transition: background 0.3s var(--ease-out-expo), box-shadow 0.3s, border-color 0.3s;
   border-bottom: 1px solid transparent;
+  /* Subtle always-on white bg so links don't float on white page */
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .nav.scrolled {
-  background: rgba(10, 14, 23, 0.85);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom-color: var(--color-border);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
 }
 
 .logo {
@@ -30,7 +33,7 @@
 }
 
 .logo span {
-  color: var(--color-primary);
+  color: var(--color-brand-main);
 }
 
 .links {
@@ -50,7 +53,7 @@
 
 .links a:hover,
 .links a.active {
-  color: var(--color-text);
+  color: var(--color-brand-deep);
 }
 
 .actions {
@@ -73,27 +76,27 @@
 }
 
 .langToggle:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: var(--color-brand-main);
+  border-color: var(--color-brand-main);
 }
 
 .contactBtn {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-bg);
-  background: var(--color-primary);
+  color: #fff;
+  background: var(--color-brand-deep);
   border: none;
   border-radius: 8px;
   padding: 0.5rem 1.25rem;
   cursor: pointer;
-  transition: box-shadow 0.2s, opacity 0.2s;
+  transition: background 0.2s, box-shadow 0.2s;
   font-family: var(--font-body);
   text-decoration: none;
 }
 
 .contactBtn:hover {
-  box-shadow: var(--glow-hover);
-  opacity: 0.9;
+  background: var(--color-brand-main);
+  box-shadow: 0 4px 16px rgba(0, 174, 239, 0.3);
 }
 
 /* Mobile hamburger */
@@ -142,7 +145,7 @@
 }
 
 .mobileMenu a:hover {
-  color: var(--color-primary);
+  color: var(--color-brand-main);
 }
 
 @media (max-width: 768px) {

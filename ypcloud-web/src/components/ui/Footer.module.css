@@ -1,5 +1,5 @@
 .footer {
-  background: var(--color-surface);
+  background: var(--color-bg-soft);
   border-top: 1px solid var(--color-border);
   padding: 4rem 2rem 2rem;
 }
@@ -22,7 +22,7 @@
 }
 
 .brand .logo span {
-  color: var(--color-primary);
+  color: var(--color-brand-main);
 }
 
 .tagline {
@@ -53,8 +53,8 @@
 }
 
 .socialLink:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: var(--color-brand-main);
+  border-color: var(--color-brand-main);
 }
 
 .col h4 {
@@ -92,7 +92,7 @@
 }
 
 .contact a {
-  color: var(--color-primary);
+  color: var(--color-brand-main);
   text-decoration: none;
 }
 

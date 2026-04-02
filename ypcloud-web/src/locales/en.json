@@ -8,10 +8,17 @@
     "contact": "Contact Us"
   },
   "hero": {
-    "headline": "The Cloud Infrastructure for the AI-Native Era",
-    "subheadline": "From edge devices to enterprise AI — one platform, endless connections.",
+    "headline": "One Platform. Four Powers. Infinite Possibilities.",
+    "subheadline": "From Edge to Cloud, from App to AI — YPCloud lets enterprises transform digitally without starting over.",
     "cta_primary": "Explore Platform",
-    "cta_secondary": "Watch Demo"
+    "cta_secondary": "Learn More"
+  },
+  "pillars": {
+    "headline": "Four Powers. One Ecosystem.",
+    "cloud":   { "name": "Distributed Cloud", "tagline": "Enterprise distributed cloud platform" },
+    "edge":    { "name": "Any Edge",          "tagline": "Edge computing & IoT intelligence" },
+    "jujue":   { "name": "Jujue",             "tagline": "App ecosystem & community commerce" },
+    "clouder": { "name": "Clouder",           "tagline": "Low-code platform & digital talent" }
   },
   "trust": {
     "stat1_num": "2005",  "stat1_label": "Founded",
@@ -85,6 +92,55 @@
     ],
     "cta_careers": "Explore Careers",
     "cta_community": "Join the Community"
+  },
+  "cloud_section": {
+    "label": "Distributed Cloud",
+    "headline": "Enterprise Cloud, Built from the Core",
+    "desc": "MoteBus, Ultranet, and AiCloud form the backbone of YPCloud's distributed infrastructure — scalable, patented, and built for the AI era.",
+    "products": [
+      { "name": "MoteBus",  "desc": "Peer-to-peer communication protocol" },
+      { "name": "Ultranet", "desc": "Universal cloud networking platform" },
+      { "name": "CoE",      "desc": "Centre of Excellence operations" },
+      { "name": "AiCloud",  "desc": "AI model marketplace" },
+      { "name": "Qbix",     "desc": "Distributed computing fabric" },
+      { "name": "xStorage", "desc": "Cloud-native storage layer" }
+    ]
+  },
+  "edge_section": {
+    "label": "Any Edge",
+    "headline": "Edge Intelligence, Starting from the Device",
+    "desc": "Deploy compute and AI to the very edge — on industrial hardware, lightweight boards, or purpose-built devices — with zero cloud dependency.",
+    "products": [
+      { "name": "Mote Sphere", "desc": "Edge computing node" },
+      { "name": "AnyPi",       "desc": "Lightweight edge device" },
+      { "name": "AnyPro",      "desc": "Industrial-grade edge device" },
+      { "name": "AnyAi",       "desc": "On-device AI inference" }
+    ]
+  },
+  "jujue_section": {
+    "label": "Jujue",
+    "headline": "A New App Ecosystem, From Community to Commerce",
+    "desc": "Jujue reimagines how apps, services, and communities connect — blending digital commerce, smart displays, and AI agents into a single living ecosystem.",
+    "products": [
+      { "name": "Jujue",               "desc": "Web3 app browser & ecosystem" },
+      { "name": "Shoppu",              "desc": "Super marketplace platform" },
+      { "name": "SmartScreen",         "desc": "Smart screen broadcasting" },
+      { "name": "jBoard",              "desc": "Intelligent digital signage" },
+      { "name": "AiBot / FlowBot / Actor", "desc": "Digital workforce agents" }
+    ]
+  },
+  "clouder_section": {
+    "label": "Clouder",
+    "headline": "Low-Code Platform — Anyone Can Build the Cloud",
+    "desc": "Clouder puts the power of cloud app development in everyone's hands, from no-code workflows to AI-augmented content and micro-media creation.",
+    "products": [
+      { "name": "fBuilder",  "desc": "Flow low-code builder" },
+      { "name": "iBuilder",  "desc": "AI Builder" },
+      { "name": "jBuilder",  "desc": "Story Board builder" },
+      { "name": "pBuilder",  "desc": "Page Builder" },
+      { "name": "Miki AIGC", "desc": "AI-generated micro media" },
+      { "name": "Xapps",     "desc": "Cloud-native app creation" }
+    ]
   },
   "cta": {
     "headline": "Ready to build on Ultranet?",
